@@ -6,7 +6,7 @@ if (!$conn) {
 if (!mysqli_select_db($conn, 'mysql')) {
    echo "database not selected";
 }
-$address = "http://localhost:3000/first_application";
+$address = "http://localhost:3000/first-application";
 
 
 

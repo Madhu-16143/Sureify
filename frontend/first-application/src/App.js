@@ -117,7 +117,8 @@ class LoginBox extends React.Component {
       formData.append("username", this.state.username);
       formData.append("password", this.state.password);
       // C:\xampp\htdocs\Sureify_backend\Sureify\first-application-backend\login.php
-      const url = "http://localhost:80/Sureify_backend/Sureify/first-application-backend/login.php";
+      // C:\xampp\htdocs\sureify\Sureify\backend\login.php
+      const url = "http://localhost:80/sureify/Sureify/backend/login.php";
       axios.post(url, formData)
         .then(res => {
           if (res.data.status === true) {
@@ -242,7 +243,7 @@ class RegisterBox extends React.Component {
     formData.append("email", this.state.email);
     formData.append("password", this.state.password);
     // const url = "http://localhost:8080/insert";
-    const url="http://localhost:80/Sureify_backend/Sureify/first-application-backend/index.php"
+    const url="http://localhost:80/sureify/Sureify/backend/register.php"
     axios.post(url, formData)
       .then(res => {
         if (res.data.status === true) {

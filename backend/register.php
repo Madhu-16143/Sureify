@@ -6,7 +6,8 @@
    if(!mysqli_select_db($conn,'mysql')){
 	echo "database not selected";
    }
-   $address= "http://localhost:3000/first_application";
+//    C:\xampp\htdocs\sureify\Sureify\frontend\first-application
+   $address= "http://localhost:3000/first-application";
    $username = $_POST['username'];
    $email = $_POST['email'];
    $password = $_POST['password'];

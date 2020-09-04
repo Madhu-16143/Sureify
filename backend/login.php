@@ -1,12 +1,12 @@
 <?php
-$conn = mysqli_connect('127.0.0.1', 'root', '');
+$conn = mysqli_connect('sql12.freemysqlhosting.net', 'sql12363677', 'fSlmiUXFHc');
 if (!$conn) {
    echo "cannot connect Gnani";
 }
-if (!mysqli_select_db($conn, 'mysql')) {
+if (!mysqli_select_db($conn, 'sql12363677')) {
    echo "database not selected";
 }
-$address = "http://localhost:3000/first-application";
+$address = "sql12.freemysqlhosting.net:3306/first-application";
 
 
 

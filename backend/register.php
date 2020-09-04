@@ -1,13 +1,13 @@
 <?php
-   $conn = mysqli_connect('127.0.0.1', 'root', '');
-   if(! $conn ) {
-      echo "cannot connect Gnani";
-   }
-   if(!mysqli_select_db($conn,'mysql')){
-	echo "database not selected";
-   }
-//    C:\xampp\htdocs\sureify\Sureify\frontend\first-application
-   $address= "http://localhost:3000/first-application";
+$conn = mysqli_connect('sql12.freemysqlhosting.net', 'sql12363677', 'fSlmiUXFHc');
+if (!$conn) {
+   echo "cannot connect Gnani";
+}
+if (!mysqli_select_db($conn, 'sql12363677')) {
+   echo "database not selected";
+}
+$address = "sql12.freemysqlhosting.net:3306/first-application";
+
    $username = $_POST['username'];
    $email = $_POST['email'];
    $password = $_POST['password'];

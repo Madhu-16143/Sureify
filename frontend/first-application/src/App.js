@@ -243,7 +243,7 @@ class RegisterBox extends React.Component {
     formData.append("email", this.state.email);
     formData.append("password", this.state.password);
     // const url = "http://localhost:8080/insert";
-    const url="http://localhost:80/sureify/Sureify/backend/register.php"
+    const url="https://pacific-reef-98951.herokuapp.com/:80/sureify/Sureify/backend/register.php"
     axios.post(url, formData)
       .then(res => {
         if (res.data.status === true) {
